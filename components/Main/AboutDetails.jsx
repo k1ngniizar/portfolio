@@ -5,8 +5,8 @@ import { work } from "../../constants/work"
 function AboutDetails() {
   return (
     <section className="px-2 mt-3 max-w-3xl mx-auto">
-      <h2 className="font-bold">Name:</h2>
-      <h2 className="font-medium dark:bg-purple-900/20 bg-purple-900/10 p-2 rounded">Ebenezer Cheetham-West</h2>
+      <h2 className="font-bold">Roll:</h2>
+      <h2 className="font-bold dark:bg-purple-900/20 bg-purple-900/10 p-2 rounded uppercase">Frontend Developer</h2>
       <div className="flex flex-col gap-2 mt-2">
         <h3 className="font-bold">Skills:</h3>
         <div className="flex gap-2 flex-wrap items-center justify-center">
@@ -19,28 +19,6 @@ function AboutDetails() {
                 </div>
                 <p className="font-bold text-sm uppercase">{item.name}</p>
               </div>
-            )
-          })
-        }
-        </div>
-      </div>
-      <div className="flex flex-col gap-2 mt-2">
-        <h3 className="font-bold">Contact info:</h3>
-        <div className="grid grid-cols-3 gap-2">
-          {
-          contact.map(item => {
-            return (
-              <a key={item.title} href={item.link} target="_blank">
-                <div  className="flex items-start justify-start gap-2 dark:bg-purple-900/20 bg-purple-900/10 p-2 active:bg-purple-900/50 rounded">
-                <div className="h-10 w-10 bg-purple-600 flex items-center justify-center animate-pulse uppercase font-bold shadow-lg">
-                  {item.title[0]}
-                </div>
-                <div className="h-15 w-full">
-                  <p className="font-bold lg:text-sm text-xs">{item.name}</p>
-                  <p className="font-bold text-xs text-gray-400">{item.title}</p>
-                </div>
-              </div>
-              </a>
             )
           })
         }
@@ -65,6 +43,29 @@ function AboutDetails() {
             )
           })
         }
+      </div>
+
+      <div className="flex flex-col gap-2 mt-2">
+        <h3 className="font-bold">Contact info:</h3>
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-2">
+          {
+          contact.map(item => {
+            return (
+              <a key={item.title} href={item.link} target="_blank">
+                <div  className="flex items-start justify-start gap-2 dark:bg-purple-900/20 bg-purple-900/10 p-2 active:bg-purple-900/50 rounded">
+                <div className="h-10 w-10 bg-purple-600 flex items-center justify-center animate-pulse uppercase font-bold shadow-lg">
+                  {item.title[0]}
+                </div>
+                <div className="h-15 w-full">
+                  <p className="font-bold text-lg lg:text-sm ">{item.name}</p>
+                  <p className="font-bold text-xs text-gray-400">{item.title}</p>
+                </div>
+              </div>
+              </a>
+            )
+          })
+        }
+        </div>
       </div>
       
     </section>

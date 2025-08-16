@@ -33,9 +33,9 @@ function Project() {
       <div className=' lg:max-w-3xl mx-auto gap-1 flex flex-col px-3 text-sm my-1'>
         <p className='text-xs lg:text-sm'><span className=' uppercase font-bold dark:text-white'>{detail.name}</span> {detail.desc.main}</p>
         <p className='text-xs lg:text-sm'>{detail.desc.sub}</p>
-        <div className='flex gap-2 items-center justify-start'>
+        <div className='flex flex-wrap gap-2 items-center justify-start'>
           {
-          detail.desc.tech.map(item => <span key={item} className='bg-purple-600 rounded-sm px-2 py-1 font-bold'>{item}</span>)
+          detail.desc.tech.map(item => <span key={item} className='bg-purple-600 rounded-sm shrink-0 px-2 py-1 font-bold'>{item}</span>)
         }
         </div>
       </div>
