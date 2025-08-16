@@ -6,7 +6,8 @@ export const project = [
     client:"bromuno",
     desc:{
       main:"is a bible quiz game.",
-      sub:"It’s developed using the Next.js framework, with TypeScript, Tailwind CSS, and HTML powering the frontend."
+      sub:"The aim of WORDCHAMPS is to bring people closer to God and have a better spiritual life.",
+      tech: ["Next.js","TypeScript","Tailwind CSS"]
     },
     imageUrl: "/wordchamp.png",
     link:"https://www.wordchamps.live/",
@@ -21,7 +22,8 @@ export const project = [
     client:"CapHub",
     desc:{
       main:"is an online gadget store.",
-      sub:"It’s developed using the Next.js framework, with TypeScript, Tailwind CSS, and HTML powering the frontend."
+      sub:"The store is aimed at enhancing user experience, for seamless and stress free shopping.",
+      tech: ["Next.js","TypeScript","Tailwind CSS"]
     },
     imageUrl: "/caphub.png",
     link:"https://caphub-seven.vercel.app/",
@@ -36,7 +38,8 @@ export const project = [
     client:"me",
     desc:{
       main:"is a simple and fun game for everyone.",
-      sub:"It’s developed using the React framework (viteApp), with JavaScript, Tailwind CSS, and HTML powering the frontend."
+      sub:"Just for fun, make sure all numbers are the same.",
+      tech: ["React.js","ViteApp","JavaScript","Tailwind CSS"]
     },
     imageUrl: "/tenzies.png",
     link:"https://k1ngniizar.github.io/tenzies/",
@@ -51,7 +54,8 @@ export const project = [
     client:"me",
     desc:{
       main:"is a simple and fun game for everyone.",
-      sub:"It’s developed using the React framework (viteApp), with JavaScript, Tailwind CSS, and HTML powering the frontend."
+      sub:"No tension, your work here is to save all or as many coding languages as you can.",
+      tech: ["React.js","ViteApp","JavaScript","Tailwind CSS"]
     },
     imageUrl: "/endgame.png",
     link:"#",
@@ -60,3 +64,4 @@ export const project = [
     end:"pending..."
   }
 ]
+

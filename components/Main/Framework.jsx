@@ -8,11 +8,17 @@ function Framework() {
        {
         framework.map(item => {
           return (
-            <div className="border-2 border-purple-900 h-[200px] w-[150px] sm:w-[200px] lg:w-[250px] shrink-0">
-              <div className="h-[80%] bg-purple-900 font-bold text-4xl uppercase flex items-center justify-center ">
-                <p className="animate-pulse">{item[0]}</p>
+            <div className="border-2 border-purple-900 w-[150px] sm:w-[200px] h-fit lg:w-[250px] shrink-0">
+              <div className="h-[150px] bg-purple-900 font-bold text-4xl uppercase flex items-center justify-center ">
+                <p className="animate-pulse">{item.name[0]}</p>
               </div>
-              <p className="font-bold lg:px-4 text-nowrap text-xs lg:text-lg uppercase">{item}</p>
+              <p className="font-bold lg:px-4 text-nowrap text-xs lg:text-lg uppercase">{item.name}</p>
+              <div className="flex items-end flex-col">
+                <span className="font-bold">{item.level}</span>
+                <div className="w-full h-2 bg-transparent">
+                  <div style={{"width":item.level}} className="bg-purple-600 h-full rounded-tr-full rounded-br-full"/>
+                </div>
+              </div>
             </div>
           )
         })

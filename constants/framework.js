@@ -1,1 +1,46 @@
-export const framework = ["typescript","javascript","html","vanilla css", "tailwind css","reactjs","nextjs","expressjs","nodejs","gsap","framer"]
+export const framework = [
+  {
+    name:"typescript",
+    level:"30%"
+  },
+  {
+    name:"javascript",
+    level:"70%"
+  },
+  {
+    name:"html",
+    level:"90%"
+  },
+  {
+    name:"vanilla css",
+    level:"70%"
+  },
+  {
+    name:"tailwind css",
+    level:"80%"
+  },
+  {
+    name:"reactjs",
+    level:"70%"
+  },
+  {
+    name:"nextjs",
+    level:"70%"
+  },
+  {
+    name:"expressjs",
+    level:"5%"
+  },
+  {
+    name:"nodejs",
+    level:"5%"
+  },
+  {
+    name:"gsap",
+    level:"30%"
+  },
+  {
+    name:"framer",
+    level:"30%"
+  },
+]

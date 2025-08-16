@@ -1,5 +1,4 @@
 import { contact } from "../../constants/contact"
-import { education } from "../../constants/education"
 import { framework } from "../../constants/framework"
 import { work } from "../../constants/work"
 
@@ -16,9 +15,9 @@ function AboutDetails() {
             return (
               <div key={item} className=" shrink-0 flex items-center justify-start gap-2 dark:bg-purple-900/20 bg-purple-900/10 p-2 rounded">
                 <div className="h-10 w-10 bg-purple-600 flex items-center justify-center animate-pulse uppercase font-bold shadow-lg">
-                  {item[0]}
+                  {item.name[0]}
                 </div>
-                <p className="font-bold text-sm uppercase">{item}</p>
+                <p className="font-bold text-sm uppercase">{item.name}</p>
               </div>
             )
           })
@@ -27,10 +26,12 @@ function AboutDetails() {
       </div>
       <div className="flex flex-col gap-2 mt-2">
         <h3 className="font-bold">Contact info:</h3>
-        {
+        <div className="grid grid-cols-3 gap-2">
+          {
           contact.map(item => {
             return (
-              <div key={item.title} className="flex items-start justify-start gap-2 dark:bg-purple-900/20 bg-purple-900/10 p-2 rounded">
+              <a key={item.title} href={item.link} target="_blank">
+                <div  className="flex items-start justify-start gap-2 dark:bg-purple-900/20 bg-purple-900/10 p-2 active:bg-purple-900/50 rounded">
                 <div className="h-10 w-10 bg-purple-600 flex items-center justify-center animate-pulse uppercase font-bold shadow-lg">
                   {item.title[0]}
                 </div>
@@ -39,9 +40,11 @@ function AboutDetails() {
                   <p className="font-bold text-xs text-gray-400">{item.title}</p>
                 </div>
               </div>
+              </a>
             )
           })
         }
+        </div>
       </div>
       
       <div className="flex flex-col gap-2 mt-2">
@@ -63,24 +66,7 @@ function AboutDetails() {
           })
         }
       </div>
-      <div className="flex flex-col gap-2 mt-2">
-        <h3 className="font-bold">Education:</h3>
-        {
-          education.map(item => {
-            return (
-              <div key={item.title} className="flex items-start justify-start gap-2 dark:bg-purple-900/20 bg-purple-900/10 p-2 rounded">
-               <div className="h-10 w-10 bg-purple-600 flex items-center justify-center animate-pulse uppercase font-bold shadow-lg">
-                  {item.name[0]}
-                </div>
-                <div className="h-15 w-full">
-                  <p className="font-bold lg:text-sm text-xs">{item.name}</p>
-                  <p className="font-bold text-xs text-gray-400">{item.duration}</p>
-                </div>
-              </div>
-            )
-          })
-        }
-      </div>
+      
     </section>
   )
 }
