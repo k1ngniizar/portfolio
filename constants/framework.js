@@ -1,0 +1,1 @@
+export const framework = ["typescript","javascript","html","vanilla css", "tailwind css","reactjs","nextjs","expressjs","nodejs","gsap","framer"]
