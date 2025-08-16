@@ -35,7 +35,7 @@ function Project() {
         <p className='text-xs lg:text-sm'>{detail.desc.sub}</p>
         <div className='flex flex-wrap gap-2 items-center justify-start'>
           {
-          detail.desc.tech.map(item => <span key={item} className='bg-purple-600 rounded-sm shrink-0 px-2 py-1 font-bold'>{item}</span>)
+          detail.desc.tech.map(item => <span key={item} className='bg-purple-600 text-white rounded-sm shrink-0 px-2 py-1 font-bold'>{item}</span>)
         }
         </div>
       </div>

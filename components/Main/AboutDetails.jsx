@@ -14,7 +14,7 @@ function AboutDetails() {
           framework.map(item => {
             return (
               <div key={item} className=" shrink-0 flex items-center justify-start gap-2 dark:bg-purple-900/20 bg-purple-900/10 p-2 rounded">
-                <div className="h-10 w-10 bg-purple-600 flex items-center justify-center animate-pulse uppercase font-bold shadow-lg">
+                <div className="h-10 w-10 bg-purple-600 flex items-center justify-center animate-pulse uppercase font-bold shadow-lg text-white">
                   {item.name[0]}
                 </div>
                 <p className="font-bold text-sm uppercase">{item.name}</p>
@@ -31,13 +31,13 @@ function AboutDetails() {
           work.map(item => {
             return (
               <div key={item.title} className="flex items-start justify-start gap-2 dark:bg-purple-900/20 bg-purple-900/10 p-2 rounded">
-                <div className="h-10 w-10 bg-purple-600 flex items-center justify-center animate-pulse uppercase font-bold shadow-lg">
+                <div className="h-10 w-10 bg-purple-600 flex items-center justify-center animate-pulse uppercase font-bold shadow-lg text-white">
                   {item.title[0]}
                 </div>
                 <div className="h-15 w-full">
-                  <p className="font-bold lg:text-sm text-xs">{item.title}</p>
-                  <p className="font-bold text-xs text-gray-400">{item.role}</p>
-                  <p className="font-bold text-xs text-gray-400">{item.duration}</p>
+                  <p className="font-bold lg:text-sm text-sm">{item.title}</p>
+                  <p className="font-bold text-xs dark:text-gray-400 text-gray-600">{item.role}</p>
+                  <p className="font-bold text-xs dark:text-gray-400 text-gray-600">{item.duration}</p>
                 </div>
               </div>
             )
@@ -53,12 +53,12 @@ function AboutDetails() {
             return (
               <a key={item.title} href={item.link} target="_blank">
                 <div  className="flex items-start justify-start gap-2 dark:bg-purple-900/20 bg-purple-900/10 p-2 active:bg-purple-900/50 rounded">
-                <div className="h-10 w-10 bg-purple-600 flex items-center justify-center animate-pulse uppercase font-bold shadow-lg">
+                <div className="h-10 w-10 bg-purple-600 flex items-center justify-center animate-pulse uppercase font-bold shadow-lg text-white">
                   {item.title[0]}
                 </div>
                 <div className="h-15 w-full">
-                  <p className="font-bold text-lg lg:text-sm ">{item.name}</p>
-                  <p className="font-bold text-xs text-gray-400">{item.title}</p>
+                  <p className="font-bold text-sm lg:text-lg ">{item.name}</p>
+                  <p className="font-bold text-xs dark:text-gray-400 text-gray-600">{item.title}</p>
                 </div>
               </div>
               </a>

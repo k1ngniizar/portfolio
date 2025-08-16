@@ -23,7 +23,7 @@ function About() {
         }
         </div>
         <div className="lg:max-w-3xl   mx-auto flex flex-col items-start  justify-center  mt-4 ">
-          <p className='font-bold text-lg'>I’m a Frontend Developer with experience building modern, responsive, and user-friendly web applications. I enjoy turning ideas into clean, efficient, and maintainable code while focusing on performance and great user experiences.</p>
+          <p className=''>I’m a Frontend Developer with experience building modern, responsive, and user-friendly web applications. I enjoy turning ideas into clean, efficient, and maintainable code while focusing on performance and great user experiences.</p>
         </div>
         {/* contact */}
         <Contact/>

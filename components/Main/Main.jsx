@@ -25,7 +25,7 @@ function Main() {
   ]
   return (
     <>
-      <nav className='sticky top-0 w-full overflow-hidden flex gap-3 px-3 my-2 py-2 dark:bg-purple-900 bg-white z-10'>
+      <nav className='sticky top-0 w-full overflow-hidden flex gap-3 px-3 my-2 py-3 dark:bg-purple-900 bg-white z-10'>
       {
         navitems.map((item,idx)=>{
           const isCurrentTab = item === currentTab;
