@@ -9,7 +9,7 @@ function About() {
           <img src="/king.jpg" alt="king" className="w-full h-full object-cover" />
         </div>
         {/* avatar image */}
-        <div className="w-[200px] bottom-5 left-10 lg:-translate-x-1/2 lg:left-[50%] overflow-hidden rounded-full h-[200px] absolute border-[5px] border-purple-800">
+        <div className="w-[200px] bottom-5 left-10 lg:-translate-x-1/2 lg:left-[50%] overflow-hidden rounded-full h-[200px] dark:bg-black bg-white absolute border-[5px] border-purple-800">
           <img src="/king.jpg" alt="king" className="w-full h-full object-cover" />
         </div>
       </section>
