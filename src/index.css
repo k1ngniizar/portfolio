@@ -14,7 +14,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: 2px;
+  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
 
 button{
   cursor: pointer;

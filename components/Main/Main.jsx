@@ -3,19 +3,19 @@ import Project from './Project'
 import Framework from './Framework';
 import AboutDetails from './AboutDetails';
 
-function Main() {
+function Main({handleContact}) {
   const [currentTab, setCurrentTab] = useState("Projects")
 
   const renderTab = ()=>{
     switch (currentTab) {
       case "Projects":
-        return <Project/>;
+        return <Project handleContact={handleContact}/>;
       case "About":
         return <AboutDetails/>;
       case "Frameworks & Libraries":
         return <Framework/>  
       default:
-        return <Project/>;
+        return <Project handleContact={handleContact}/>;
     }
   }
   const navitems = [

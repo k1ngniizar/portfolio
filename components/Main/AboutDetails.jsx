@@ -13,7 +13,7 @@ function AboutDetails() {
           {
           framework.map(item => {
             return (
-              <div key={item} className=" shrink-0 flex items-center justify-start gap-2 dark:bg-purple-900/20 bg-purple-900/10 p-2 rounded">
+              <div key={item.name} className=" shrink-0 flex items-center justify-start gap-2 dark:bg-purple-900/20 bg-purple-900/10 p-2 rounded">
                 <div className="h-10 w-10 bg-purple-600 flex items-center justify-center animate-pulse uppercase font-bold shadow-lg text-white">
                   {item.name[0]}
                 </div>
@@ -47,7 +47,7 @@ function AboutDetails() {
 
       <div className="flex flex-col gap-2 mt-2">
         <h3 className="font-bold">Contact info:</h3>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-2">
+        <div className="grid md:grid-cols-2 gap-2">
           {
           contact.map(item => {
             return (
@@ -57,7 +57,7 @@ function AboutDetails() {
                   {item.title[0]}
                 </div>
                 <div className="h-15 w-full">
-                  <p className="font-bold text-sm lg:text-lg ">{item.name}</p>
+                  <p className="underline font-bold text-sm lg:text-lg ">{item.name}</p>
                   <p className="font-bold text-xs dark:text-gray-400 text-gray-600">{item.title}</p>
                 </div>
               </div>

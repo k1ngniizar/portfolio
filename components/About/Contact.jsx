@@ -1,6 +1,6 @@
 import { Ellipsis, Mail, MessageCircle, Phone } from 'lucide-react'
 
-function Contact() {
+function Contact({handleContact}) {
   return (
     <section className='w-full max-w-3xl mx-auto flex flex-col gap-2 mt-4 '>
           <div className='flex flex-row items-center gap-2 w-full '>
@@ -24,7 +24,7 @@ function Contact() {
               <span  className='hidden sm:block'>09027280506</span>
             </button>
             </a>
-            <button className=' flex items-center justify-center h-[40px] w-[50px]  bg-purple-500 hover:bg-purple-900/50 border border-purple-900 text-white rounded-lg gap-2'>
+            <button onClick={handleContact} className=' flex items-center justify-center h-[40px] w-[50px]  bg-purple-500 hover:bg-purple-900/50 border border-purple-900 text-white rounded-lg gap-2'>
              <Ellipsis/>
             </button>
           </div>

@@ -8,7 +8,7 @@ function Framework() {
        {
         framework.map(item => {
           return (
-            <div className="border-2 border-purple-900 max-w-full md:max-w-[300px] sm:max-w-[350px] w-full h-fit  shrink-0">
+            <div key={item.name} className="border-2 border-purple-900 max-w-full md:max-w-[300px] sm:max-w-[350px] w-full h-fit  shrink-0">
               <div className="h-[150px] bg-purple-900 font-bold text-4xl uppercase flex items-center justify-center ">
                 <p className="animate-pulse text-white">{item.name[0]}</p>
               </div>
