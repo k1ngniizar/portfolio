@@ -1,9 +1,5 @@
 export const framework = [
   {
-    name:"typescript",
-    level:"30%"
-  },
-  {
     name:"javascript",
     level:"70%"
   },
@@ -26,18 +22,6 @@ export const framework = [
   {
     name:"nextjs",
     level:"70%"
-  },
-  {
-    name:"expressjs",
-    level:"5%"
-  },
-  {
-    name:"nodejs",
-    level:"5%"
-  },
-  {
-    name:"gsap",
-    level:"30%"
   },
   {
     name:"framer",

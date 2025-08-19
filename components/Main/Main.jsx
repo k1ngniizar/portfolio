@@ -12,7 +12,7 @@ function Main({handleContact}) {
         return <Project handleContact={handleContact}/>;
       case "About":
         return <AboutDetails/>;
-      case "Frameworks & Libraries":
+      case "Skills":
         return <Framework/>  
       default:
         return <Project handleContact={handleContact}/>;
@@ -21,7 +21,7 @@ function Main({handleContact}) {
   const navitems = [
     "Projects",
     "About",
-    "Frameworks & Libraries"
+    "Skills"
   ]
   return (
     <>
