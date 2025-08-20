@@ -5,7 +5,7 @@ import { project } from '../../constants/project'
 function Project({handleContact}) {
   return (
     <>
-    <div id='Projects' className='mt-4 max-w-7xl mx-auto'>
+    <div id='Projects' className=' py-[50px] md:py-[100px] max-w-7xl mx-auto'>
       <h4 className='font-bold mb-3 text-2xl px-2'>Projects:</h4>
       <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-3'>
 

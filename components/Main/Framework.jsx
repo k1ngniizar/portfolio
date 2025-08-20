@@ -3,7 +3,7 @@ import { framework } from "../../constants/framework"
 
 function Framework() {
   return (
-    <section id="Skills" className="w-full max-w-7xl mx-auto flex-col flex items-center justify-center mt-4 min-h-[500px] ">
+    <section id="Skills" className="w-full max-w-7xl bg-purple-900/10 sm:px-2 mx-auto flex-col flex items-center justify-center mt-4 md:py-[100px] py-[50px] ">
       <h2 className="w-full text-2xl px-2 font-bold mb-4">Skills:</h2>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 items-center justify-center gap-2 w-full ">
@@ -20,7 +20,7 @@ function Framework() {
               case "tailwind css":
                 return <SiTailwindcss size={30} className="dark:text-white text-purple-900"/>;
               case "reactjs":
-                return <SiReact size={30} className="animate-pulse dark:text-white text-black"/>;
+                return <SiReact size={30} className=" dark:text-white text-purple-900"/>;
               case "nextjs":
                 return <SiNextdotjs size={30} className="dark:text-white text-purple-900"/>;
               case "framer":

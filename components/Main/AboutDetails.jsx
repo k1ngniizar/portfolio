@@ -12,7 +12,7 @@ function AboutDetails({handleContact}) {
       <AboutIntro/>
       <Framework/>
       <Project handleContact={handleContact}/>
-      <div className="flex flex-col gap-2 my-2  max-w-7xl mx-auto">
+      <div className="flex justify-start flex-col gap-4 py-[50px] md:py-[100px] bg-purple-900/10 sm:px-2  max-w-7xl mx-auto">
         <h3 className="font-bold text-2xl">Work:</h3>
         {
           work.map(item => {
@@ -32,7 +32,7 @@ function AboutDetails({handleContact}) {
         }
       </div>
       
-      <div className="flex flex-col gap-2 mt-2 min-h-[500px] justify-center max-w-7xl mx-auto">
+      <div className="flex flex-col gap-2 py-[50px] md:py-[100px] sm:px-2 justify-center max-w-7xl mx-auto">
         <h3 className="font-bold text-2xl">Contact info:</h3>
         <div className="grid md:grid-cols-2 gap-2">
           {
@@ -58,7 +58,7 @@ function AboutDetails({handleContact}) {
             return (
               <a key={item.title} href={item.link} target="_blank">
                 <div  className="flex items-start justify-start gap-2  bg-purple-900/30  active:bg-purple-900/50 p-2 rounded">
-                <div className=" flex items-center justify-center animate-pulse uppercase font-bold shadow-lg text-white">
+                <div className=" flex items-center justify-center animate-pulse uppercase font-bold shadow-lg dark:text-white text-purple-900">
                  {renderIcon()}
                 </div>
                 <div className=" w-full">

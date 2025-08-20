@@ -3,9 +3,10 @@ import Contact from './Contact'
 
 function About({handleContact}) {
   return (
-    <section id='About' className=' mx-auto max-w-7xl flex lg:flex-row sm:flex-row flex-col-reverse sm:items-center justify-center gap-4 lg:max-h-[800px]  h-[100vh] mt-4 max-h-[800px] px-2 bg-purple-900/10 w-full'>
+    <section id='About' className=' mx-auto max-w-7xl flex lg:flex-row sm:flex-row flex-col-reverse sm:items-center justify-center gap-4 sm:py-[100px] py-[50px] lg:h-[100vh] lg:max-h-[700px] px-2 bg-purple-900/10 w-full'>
+      
       <section className="px-4 w-full sm:flex-2 lg:flex-1  mt-1 py-1 space-y-2  max-w-2xl content-start ">
-        <h2 className="text-lg lg:text-3xl  font-bold w-full  mx-auto">Ebenezer Cheetham-West</h2>
+        <h2 className="text-3xl  font-bold w-full  mx-auto">Ebenezer Cheetham-West</h2>
         <div className="lg:max-w-3xl mx-auto  flex mt-3 justify-start gap-2 items-center">
         {
           project.map((item)=>{
@@ -16,15 +17,15 @@ function About({handleContact}) {
         }
         </div>
         <div className="lg:max-w-3xl   mx-auto flex flex-col items-start  justify-center  mt-4 ">
-          <p className=''>I’m a Frontend Developer with experience building modern, responsive, and user-friendly web applications..</p>
+          <p className='text-lg'>I'm a Frontend Developer with experience building modern, responsive, and user-friendly web applications..</p>
         </div>
         {/* contact */}
         <Contact handleContact={handleContact}/>
       </section>
       
         {/* avatar image */}
-        <div className='sm:flex-1 flex items-center justify-start sm:justify-center gap-2'>
-          <div className="lg:w-[250px] w-[100px] sm:w-[150px] h-[100px] sm:h-[150px] overflow-hidden rounded-full lg:h-[250px] dark:bg-black bg-white border-[5px] border-purple-800">
+        <div className='sm:flex-1 flex items-center justify-center gap-2'>
+          <div className="lg:w-[250px] w-[150px] h-[150px] overflow-hidden rounded-full lg:h-[250px] dark:bg-black bg-white border-[5px] border-purple-800">
           <img src="/king.jpg" alt="king" className="w-full h-full object-cover" />
           </div>
           
