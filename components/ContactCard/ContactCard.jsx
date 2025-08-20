@@ -21,15 +21,15 @@ function ContactCard({contactMe, handleContact}) {
                     const renderIcon = ()=>{
                       switch (item.icon) {
                         case "faGithub":
-                          return <FaGithubSquare size={24}/>;
+                          return <FaGithubSquare size={24} className="animate-pulse"/>;
                         case "faTwitter":
-                          return <FaTwitterSquare size={24}/>;
+                          return <FaTwitterSquare size={24} className="animate-pulse"/>;
                         case "faWhatsapp":
-                          return <FaWhatsappSquare size={24}/>;
+                          return <FaWhatsappSquare size={24} className="animate-pulse"/>;
                         case "faMail":
-                          return <FaEnvelope size={20}/>;
+                          return <FaEnvelope size={20} className="animate-pulse"/>;
                         case "faPhone":
-                          return <FaPhone size={20}/>;
+                          return <FaPhone size={20} className="animate-pulse"/>;
                         
                       
                         default:
@@ -39,7 +39,7 @@ function ContactCard({contactMe, handleContact}) {
                     return (
                       <a key={item.title} href={item.link} target="_blank">
                         <div  className="flex items-start justify-start gap-2 dark:bg-purple-950 bg-purple-950 p-2 active:bg-purple-900/50 rounded">
-                        <div className="h-10 w-10 bg-purple-600 flex items-center justify-center animate-pulse uppercase font-bold shadow-lg text-white">
+                        <div className="h-10 w-10 bg-purple-600 flex items-center justify-center uppercase font-bold shadow-lg text-white">
                           {renderIcon()}
                         </div>
                         <div className="h-15 w-full">
