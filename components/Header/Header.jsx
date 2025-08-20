@@ -1,13 +1,24 @@
 import React from 'react'
 
 function Header() {
+  
+  const navitems = [
+    "Projects",
+    "About",
+  ]
   return (
-    <header className="flex justify-between items-center px-2 py-2 bg-purple-800">
+    <header className="flex justify-between items-center px-2 bg-purple-800 sticky top-0  z-10">
       <span className="text-sm font-bold text-white">Portfolio</span>
       <div className="flex items-center justify-center gap-4">
-        <div className="h-5 w-5 bg-black/40 rounded-full animate-pulse"/>
-        <div className="h-5 w-5 bg-black/40 rounded-full animate-pulse"/>
-        <div className="h-5 w-5 bg-black/40 rounded-full animate-pulse"/>
+        <nav className='w-full overflow-hidden flex gap-3 px-3 py-1 text-white '>
+      {
+        navitems.map((item,idx)=>{
+          return(
+          <a href={`#${item}`} key={idx} className={` font-bold  lg:text-lg text-sm shrink-0`}>{item}</a>
+          )
+        })
+      }
+      </nav>
       </div>
     </header>
   )

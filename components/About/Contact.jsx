@@ -9,13 +9,13 @@ function Contact({handleContact}) {
             <a href="mailto:huncleniizar@gmail.com" target='_blank' className='flex-2 flex text-white items-center justify-center h-[40px]'>
               <button className=' flex text-white items-center justify-center h-[40px] w-full bg-purple-900 hover:bg-purple-900/50 rounded-lg gap-2'>
               <FaEnvelope/>
-              <span className='hidden sm:block'>huncleniizar@gmail.com</span>
+              <span className='hidden sm:block sm:text-xs'>huncleniizar@gmail.com</span>
             </button>
             </a>
             <a href="tel:+2349027280506" target='_blank' className='flex-1 flex items-center justify-center h-[40px]'>
               <button className='flex items-center justify-center dark:text-white text-purple-900 h-[40px] w-full border border-purple-900 hover:bg-purple-900/50 rounded-lg gap-2'>
               <FaPhone size={16}/>
-              <span  className='hidden sm:block'>09027280506</span>
+              <span  className='hidden sm:block sm:text-xs'>09027280506</span>
             </button>
             </a>
           </div>
@@ -23,7 +23,7 @@ function Contact({handleContact}) {
             <a href="https://wa.me/qr/UAGRYFNNPTNBI1" target='_blank' className='flex-11/12 flex items-center justify-center h-[40px]'>
               <button className='flex items-center justify-center h-full w-full border border-purple-900 hover:bg-purple-900/50 dark:text-white text-purple-900 rounded-lg gap-2'>
               <FaSquareWhatsapp size={24}/>
-              <span  className='hidden sm:block'>WhatsApp</span>
+              <span  className='hidden sm:block sm:text-xs'>WhatsApp</span>
             </button>
             </a>
             <button onClick={handleContact} className=' flex items-center justify-center h-[40px] w-[50px]  bg-purple-500 hover:bg-purple-900/50 border border-purple-900 text-white rounded-lg gap-2'>

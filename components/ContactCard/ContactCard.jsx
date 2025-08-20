@@ -60,3 +60,45 @@ function ContactCard({contactMe, handleContact}) {
 }
 
 export default ContactCard
+
+
+      // <div className="flex flex-col gap-2 mt-2">
+      //   <h3 className="font-bold">Contact info:</h3>
+      //   <div className="grid md:grid-cols-2 gap-2">
+      //     {
+      //     contact.map(item => {
+      //       const renderIcon = ()=>{
+      //         switch (item.icon) {
+      //           case "faGithub":
+      //             return <FaGithubSquare size={24}/>;
+      //           case "faTwitter":
+      //             return <FaTwitterSquare size={24}/>;
+      //           case "faWhatsapp":
+      //             return <FaWhatsappSquare size={24}/>;
+      //           case "faMail":
+      //             return <FaEnvelope size={20}/>;
+      //           case "faPhone":
+      //             return <FaPhone size={20}/>;
+                
+              
+      //           default:
+      //             break;
+      //         }
+      //       }
+      //       return (
+      //         <a key={item.title} href={item.link} target="_blank">
+      //           <div  className="flex items-start justify-start gap-2 dark:bg-purple-900/20 bg-purple-900/10 p-2 active:bg-purple-900/50 rounded">
+      //           <div className="h-10 w-10 bg-purple-600 flex items-center justify-center animate-pulse uppercase font-bold shadow-lg text-white">
+      //            {renderIcon()}
+      //           </div>
+      //           <div className="h-15 w-full">
+      //             <p className="underline font-bold text-sm lg:text-lg ">{item.name}</p>
+      //             <p className="font-bold text-xs dark:text-gray-400 text-gray-600">{item.title}</p>
+      //           </div>
+      //         </div>
+      //         </a>
+      //       )
+      //     })
+      //   }
+      //   </div>
+      // </div>
