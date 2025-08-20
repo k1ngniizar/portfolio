@@ -3,7 +3,7 @@ import Contact from './Contact'
 
 function About({handleContact}) {
   return (
-    <section id='About' className=' mx-auto max-w-7xl flex lg:flex-row sm:flex-row flex-col-reverse sm:items-center justify-center gap-4 sm:py-[100px] py-[50px] lg:h-[100vh] lg:max-h-[700px] px-2 bg-purple-900/10 w-full'>
+    <section id='About' className=' mx-auto max-w-7xl flex lg:flex-row sm:flex-row flex-col-reverse sm:items-center justify-center gap-4 sm:py-[100px] py-[50px] min-h-[100vh] max-h-[700px] px-2 bg-purple-900/10 w-full'>
       
       <section className="px-4 w-full sm:flex-2 lg:flex-1  mt-1 py-1 space-y-2  max-w-2xl content-start ">
         <h2 className="text-3xl  font-bold w-full  mx-auto">Ebenezer Cheetham-West</h2>
