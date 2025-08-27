@@ -3,10 +3,11 @@ import { framework } from "../../constants/framework"
 
 function Framework() {
   return (
-    <section id="Skills" className="w-full max-w-7xl bg-purple-900/10 sm:px-2 mx-auto flex-col flex items-center justify-center mt-4 md:py-[100px] py-[50px] ">
+    <div className={`flex items-center justify-center dark:bg-purple-900/30 bg-purple-900/10`}>
+      <section id="skills" className="w-full max-w-7xl  px-2 mx-auto flex-col flex items-center justify-center mt-4 md:py-[100px] py-[50px] ">
       <h2 className="w-full text-2xl px-2 font-bold mb-4">Skills:</h2>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 items-center justify-center gap-2 w-full ">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 items-center justify-center gap-4 w-full ">
        {
         framework.map(item => {
           const renderIcon = ()=>{
@@ -50,6 +51,7 @@ function Framework() {
       }
       </div>
     </section>
+    </div>
   )
 }
 

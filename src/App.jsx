@@ -1,11 +1,13 @@
 import Header from "../components/Header/Header";
 import About from "../components/About/About";
-import Main from "../components/Main/Main";
 import { useEffect, useState } from "react";
 import ContactCard from "../components/ContactCard/ContactCard";
 import AboutDetails from "../components/Main/AboutDetails";
 import { Copyright } from "lucide-react";
 import { FaEnvelope, FaGithub, FaWhatsapp } from "react-icons/fa6";
+import AboutIntro from "../components/About/AboutIntro";
+import Framework from "../components/Main/Framework";
+import Project from "../components/Main/Project";
 
 function App() {
   const [contactMe, setContactMe] = useState(false)
@@ -29,8 +31,12 @@ function App() {
     <ContactCard handleContact={handleContact} contactMe={contactMe}/>
     <Header/>
     <About handleContact={handleContact}/>
-    <AboutDetails handleContact={handleContact}/>
-    <footer className=" max-w-7xl mx-auto py-[20px] px-3 bg-purple-900/10 space-y-2">
+    <AboutIntro/>
+    <Framework/>
+    <Project handleContact={handleContact}/>
+    <AboutDetails/>
+    <div className={`flex items-center justify-center dark:bg-purple-900/30 bg-purple-900/10 `}>
+      <footer className=" max-w-7xl mx-auto py-[20px] px-3 w-full space-y-2">
       <div className="flex items-center justify-between">
         <p className="font-bold text-sm">Ebenezer West</p>
         <div className="flex gap-2 items-center justify-start">
@@ -51,6 +57,7 @@ function App() {
         <p className="text-xs font-bold">2025 Ebenezer West. All rights reserved.</p>
       </div>
     </footer>
+    </div>
     </>
   )
 }

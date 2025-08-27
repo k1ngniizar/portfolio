@@ -2,18 +2,13 @@ import { FaGithubSquare, FaTwitterSquare, FaWhatsappSquare, FaEnvelope } from "r
 import { FaPhone } from "react-icons/fa6"
 import { contact } from "../../constants/contact"
 import { work } from "../../constants/work"
-import Framework from "./Framework"
-import Project from "./Project"
-import AboutIntro from "../About/AboutIntro"
 
-function AboutDetails({handleContact}) {
+function AboutDetails() {
   return (
-    <section className=" px-2 mt-3 max-w-3xl lg:max-w-full mx-auto">
-      <AboutIntro/>
-      <Framework/>
-      <Project handleContact={handleContact}/>
-      <div className="flex justify-start flex-col gap-4 py-[50px] md:py-[100px] bg-purple-900/10 sm:px-2  max-w-7xl mx-auto">
-        <h3 className="font-bold text-2xl">Work:</h3>
+    <>
+      <div className={`flex items-center justify-center dark:bg-purple-900/30 bg-purple-900/10`}>
+        <div id="experience" className="flex justify-start flex-col gap-4 py-[50px] md:py-[100px]  px-2 w-full  max-w-7xl mx-auto">
+        <h3 className="font-bold text-2xl">Experience:</h3>
         {
           work.map(item => {
             return (
@@ -31,9 +26,10 @@ function AboutDetails({handleContact}) {
           })
         }
       </div>
+      </div>
       
-      <div className="flex flex-col gap-2 py-[50px] md:py-[100px] sm:px-2 justify-center max-w-7xl mx-auto">
-        <h3 className="font-bold text-2xl">Contact info:</h3>
+      <div id="contact" className="flex flex-col gap-2 py-[50px] md:py-[100px] px-2 justify-center max-w-7xl mx-auto">
+        <h3 className="font-bold text-2xl">Contact and Links:</h3>
         <div className="grid md:grid-cols-2 gap-2">
           {
           contact.map(item => {
@@ -73,7 +69,7 @@ function AboutDetails({handleContact}) {
         </div>
       </div>
       
-    </section>
+    </>
   )
 }
 
