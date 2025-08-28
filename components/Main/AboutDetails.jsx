@@ -13,8 +13,8 @@ function AboutDetails() {
           work.map(item => {
             return (
               <div key={item.title} className="flex items-start justify-start gap-2 bg-purple-900/30 p-2 rounded ">
-                <div className="h-10 w-10 bg-purple-600 flex items-center justify-center animate-pulse uppercase font-bold shadow-lg text-white">
-                  {item.title[0]}
+                <div className="h-5 w-5 bg-purple-600 flex items-center justify-center uppercase font-bold shadow-lg text-white">
+                  <span className="animate-pulse">{item.title[0]}</span>
                 </div>
                 <div className="h-15 w-full">
                   <p className="font-bold lg:text-sm text-sm">{item.title}</p>
