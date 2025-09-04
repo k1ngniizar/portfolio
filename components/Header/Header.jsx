@@ -45,8 +45,8 @@ function Header() {
           isMenuOpen && (
             <div className=''>
               <div onClick={()=> setIsMenuOpen(false)} className='fixed inset-0 h-full w-full bg-purple-950/50 cursor-pointer' />
-              <div className="flex z-20 items-center justify-center gap-4 absolute  right-0 bg-purple-900 shadow-md shadow-gray-800 min-w-[150px] rounded">
-                <nav className='w-full overflow-hidden flex flex-col gap-2 px-1 py-1 text-white'>
+              <div className="flex z-20 items-center justify-center gap-4 absolute  right-0 bg-purple-900 shadow-md shadow-gray-800 w-[50vw] max-w-[250px] rounded">
+                <nav className='w-full overflow-hidden flex flex-col gap-4 px-1 py-1 text-white'>
                   {
                     navitems.map((item,idx)=>{
                       return(
