@@ -27,7 +27,7 @@ function About({handleContact}) {
         {/* avatar image */}
         <div className='sm:flex-1 flex items-center justify-center gap-2'>
           <div className="lg:w-[300px] lg:h-[300px] w-[250px] overflow-hidden rounded-full h-[250px] dark:bg-black bg-white border-[5px] border-purple-800">
-          <img src="/king.jpg" alt="king" className="w-full h-full object-cover" />
+          <img src="/k1ng.jpg" alt="king" className="w-full h-full object-cover" />
           </div>
           
         </div>

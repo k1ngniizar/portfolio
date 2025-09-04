@@ -25,7 +25,7 @@ function Header() {
     }, [isMenuOpen]);
 
   return (
-    <div className={`flex items-center justify-center bg-purple-800 sticky top-0  z-10 px-2 `}>
+    <div className={`flex items-center justify-center bg-purple-800 sticky top-0  z-10 px-2 py-2 `}>
       <header className="flex justify-between items-center max-w-7xl mx-auto w-full ">
       <span className="text-sm font-bold text-white">Portfolio</span>
       <div className="hidden md:flex items-center justify-center gap-4">

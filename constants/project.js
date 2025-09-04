@@ -62,6 +62,22 @@ export const project = [
     type:"personal",
     start:"aug 11th 2025",
     end:"pending..."
+  },
+  {
+    id:5,
+    deployed: false,
+    name:"noteboard",
+    client:"me",
+    desc:{
+      main:"is a simple site for keeping notes.",
+      sub:"Please don't delete my notes😂. Seriously😒",
+      tech: ["React.js","ViteApp","JavaScript","Tailwind CSS","MongoDB","NodeJS"]
+    },
+    imageUrl: "/noteboard.png",
+    link:"#",
+    type:"personal",
+    start:"aug 31th 2025",
+    end:"pending..."
   }
 ]
 

@@ -35,7 +35,7 @@ function AboutIntro() {
           <p> I am passionate about identifying and solving real-world problems, as I believe that is where true value lies.</p>
           <p>To stay ahead in a fast-evolving industry, I continuously learn and adapt to the latest technologies and best practices. Guided by honesty and professionalism, I am committed to creating digital experiences that not only serve users effectively but also drive business growth.</p>
         </div>
-        <div className=' max-w-lg flex-1 w-full'>
+        <div className=' sm:max-w-lg flex-1 w-full'>
          <h4 className='font-bold text-2xl text-purple-600 mb-4'>How?</h4>
          <div className='flex-col flex gap-3'>
           {
