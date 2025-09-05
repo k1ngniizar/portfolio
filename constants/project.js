@@ -65,19 +65,19 @@ export const project = [
   },
   {
     id:5,
-    deployed: false,
+    deployed: true,
     name:"noteboard",
     client:"me",
     desc:{
       main:"is a simple site for keeping notes.",
-      sub:"Please don't delete my notes😂. Seriously😒",
+      sub:"It is personally for me as there is no user authentication. Please don't delete my notes😂. Seriously😒",
       tech: ["React.js","ViteApp","JavaScript","Tailwind CSS","MongoDB","NodeJS"]
     },
     imageUrl: "/noteboard.png",
-    link:"#",
+    link:"https://note-crpc.onrender.com",
     type:"personal",
     start:"aug 31th 2025",
-    end:"pending..."
+    end:"sept 5th 2025"
   }
 ]
 
