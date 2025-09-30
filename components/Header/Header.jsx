@@ -1,4 +1,4 @@
-import { Menu } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 function Header() {
@@ -43,20 +43,25 @@ function Header() {
         <Menu onClick={()=> setIsMenuOpen(true)} className='text-white cursor-pointer hover:text-purple-400'/>
         {
           isMenuOpen && (
-            <div className=''>
-              <div onClick={()=> setIsMenuOpen(false)} className='fixed inset-0 h-full w-full bg-purple-950/50 cursor-pointer' />
-              <div className="flex z-20 items-center justify-center gap-4 absolute  right-0 bg-purple-900 shadow-md shadow-gray-800 w-[50vw] max-w-[250px] rounded">
-                <nav className='w-full overflow-hidden flex flex-col gap-4 px-1 py-1 text-white'>
+            <div
+            className="flex flex-col animate-  w-full h-full bottom-0 left-0 right-0 top-0 z-50 sm:hidden">
+            <div className="w-full h-full bg-black/50 backdrop-blur-xs inset-0 absolute" />
+            <button onClick={() => setIsMenuOpen(false)} className="absolute top-5 right-5">
+              <X className=" text-white" />
+            </button>
+            <div className="z-10 flex-col w-1/2 h-full flex gap-4 py-4 px-4 bg-gradient-to-br from-purple-900/20 via-black to-purple-900/50">
+              <h4 className="font-black border-b border-b-purple-700">Ebenezer West</h4>
+              <nav className='w-full overflow-hidden flex flex-col gap-4 px-1 py-1 text-white'>
                   {
                     navitems.map((item,idx)=>{
                       return(
-                      <a onClick={()=> setIsMenuOpen(false)} href={`#${item}`} key={idx} className={`px-1 active:bg-purple-700 hover:bg-purple-600 font-bold transition-colors delay-100  border-b border-purple-700 rounded text-sm shrink-0`}>{item[0].toLocaleUpperCase() + item.slice(1)}</a>
+                      <a onClick={()=> setIsMenuOpen(false)} href={`#${item}`} key={idx} className={`px-1 active:text-purple-700 hover:text-purple-600 font-bold transition-colors delay-100   rounded text-sm shrink-0`}>{item[0].toLocaleUpperCase() + item.slice(1)}</a>
                       )
                     })
                   }
                 </nav>
-              </div>
             </div>
+          </div>
           )
         }
       </div>
