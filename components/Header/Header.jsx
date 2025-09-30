@@ -44,7 +44,7 @@ function Header() {
         {
           isMenuOpen && (
             <div
-            className="flex flex-col animate-  w-full h-full bottom-0 left-0 right-0 top-0 z-50 sm:hidden">
+            className="flex flex-col fixed  w-full h-full bottom-0 left-0 right-0 top-0 z-50 sm:hidden">
             <div className="w-full h-full bg-black/50 backdrop-blur-xs inset-0 absolute" />
             <button onClick={() => setIsMenuOpen(false)} className="absolute top-5 right-5">
               <X className=" text-white" />
