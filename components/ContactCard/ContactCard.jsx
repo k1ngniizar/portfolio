@@ -8,7 +8,7 @@ function ContactCard({contactMe, handleContact}) {
   return (
     <>
       {contactMe && <>
-      <div onClick={handleContact} className="cursor-pointer fixed h-[100vh] w-[100vw] bg-black/40 z-10 "/>
+      <div onClick={handleContact} className="cursor-pointer fixed h-[100vh] w-[100vw] bg-purple-900/40 backdrop-blur-xs z-10 "/>
       <div className="fixed  z-20 bg-purple-900 p-3 h-[50vh]   lg:min-h-[400px] min-h-[100px] max-w-2xl md:max-w-full max-h-[500px] rounded-t-3xl -translate-x-1/2 left-1/2 w-full bottom-0 overflow-hidden overflow-y-scroll scrollbar-hide">
         <div className="flex flex-col gap-2 mt-2">
                 <div className="flex items-center justify-between">
