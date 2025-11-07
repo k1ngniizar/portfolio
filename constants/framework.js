@@ -1,30 +1,30 @@
 export const framework = [
   {
     name:"javascript",
-    level:"70%"
+    level:"100%"
   },
   {
     name:"html",
-    level:"90%"
+    level:"100%"
   },
   {
     name:"vanilla css",
-    level:"70%"
+    level:"100%"
   },
   {
     name:"tailwind css",
-    level:"80%"
+    level:"100%"
   },
   {
     name:"reactjs",
-    level:"70%"
+    level:"100%"
   },
   {
     name:"nextjs",
-    level:"70%"
+    level:"100%"
   },
   {
     name:"framer",
-    level:"30%"
+    level:"100%"
   },
 ]

@@ -28,7 +28,7 @@ function AboutIntro() {
     <section id='about' className=' sm:py-[100px] py-[50px] mx-auto max-w-7xl justify-items-center content-center px-2'>
       <h4 className='text-3xl font-bold uppercase text-center'>Me?</h4>
       <div className=' flex sm:flex-row flex-col gap-8 items-start justify-center sm:p-3'>
-        <div className=' max-w-3xl flex-1 md:text-lg text-sm flex flex-col gap-3 items-center justify-center'>
+        <div className=' max-w-3xl flex-1 md:text-lg text-sm flex flex-col gap-3 items-center  justify-center'>
           <p className='font-bold text-2xl w-full text-purple-600'>I Am</p>
           <p>Ebenezer Cheetham-West, a frontend developer with over one year of experience building modern, responsive web applications.</p>
           <p> My focus is on delivering user-centered, developer-friendly, and profitable solutions that help clients achieve their goals.</p>

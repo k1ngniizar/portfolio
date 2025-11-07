@@ -31,8 +31,40 @@ export const project = [
     start:"jul 23th 2025",
     end:"aug 15th 2025"
   },
-   {
+  {
     id:3,
+    deployed: true,
+    name:"noteboard",
+    client:"me",
+    desc:{
+      main:"is a simple site for keeping notes.",
+      sub:"It is personally for me as there is no user authentication. Please don't delete my notes😂. Seriously😒",
+      tech: ["React.js","ViteApp","JavaScript","Tailwind CSS","MongoDB","NodeJS"]
+    },
+    imageUrl: "/noteboard.png",
+    link:"https://note-crpc.onrender.com",
+    type:"personal",
+    start:"aug 31th 2025",
+    end:"sept 5th 2025"
+  },
+  {
+    id:4,
+    deployed: true,
+    name:"konekt",
+    client:"me",
+    desc:{
+      main:"and chat with random strangers.",
+      sub:"Built this as a practice for fullstack developement",
+      tech: ["React.js","ViteApp","Socket.io","Tailwind CSS","MongoDB","NodeJS"]
+    },
+    imageUrl: "/konekt.png",
+    link:"https://konekt-zg5z.onrender.com/",
+    type:"personal",
+    start:"Oct 2025",
+    end:"Nov 2025"
+  },
+   {
+    id:5,
     deployed: true,
     name:"tenzies",
     client:"me",
@@ -48,7 +80,7 @@ export const project = [
     end:"aug 9th 2025"
   },
   {
-    id:4,
+    id:6,
     deployed: false,
     name:"endgame",
     client:"me",
@@ -63,21 +95,5 @@ export const project = [
     start:"aug 11th 2025",
     end:"pending..."
   },
-  {
-    id:5,
-    deployed: true,
-    name:"noteboard",
-    client:"me",
-    desc:{
-      main:"is a simple site for keeping notes.",
-      sub:"It is personally for me as there is no user authentication. Please don't delete my notes😂. Seriously😒",
-      tech: ["React.js","ViteApp","JavaScript","Tailwind CSS","MongoDB","NodeJS"]
-    },
-    imageUrl: "/noteboard.png",
-    link:"https://note-crpc.onrender.com",
-    type:"personal",
-    start:"aug 31th 2025",
-    end:"sept 5th 2025"
-  }
 ]
 

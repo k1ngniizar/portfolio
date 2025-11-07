@@ -13,19 +13,19 @@ function Framework() {
           const renderIcon = ()=>{
             switch (item.name) {
               case "javascript":
-                return <SiJavascript size={30} className="dark:text-white text-purple-900"/>;
+                return <SiJavascript size={30} className="dark:text-white text-purple-900 animate-pulse"/>;
               case "html":
-                return <SiHtml5 size={30} className="dark:text-white text-purple-900"/>;
+                return <SiHtml5 size={30} className="dark:text-white text-purple-900 animate-pulse"/>;
               case "vanilla css":
-                return <SiCss3 size={30} className="dark:text-white text-purple-900"/>;
+                return <SiCss3 size={30} className="dark:text-white text-purple-900 animate-pulse"/>;
               case "tailwind css":
-                return <SiTailwindcss size={30} className="dark:text-white text-purple-900"/>;
+                return <SiTailwindcss size={30} className="dark:text-white text-purple-900 animate-pulse"/>;
               case "reactjs":
-                return <SiReact size={30} className=" dark:text-white text-purple-900"/>;
+                return <SiReact size={30} className=" dark:text-white text-purple-900 animate-pulse"/>;
               case "nextjs":
-                return <SiNextdotjs size={30} className="dark:text-white text-purple-900"/>;
+                return <SiNextdotjs size={30} className="dark:text-white text-purple-900 animate-pulse"/>;
               case "framer":
-                return <SiFramer size={30} className="dark:text-white text-purple-900"/>;  
+                return <SiFramer size={30} className="dark:text-white text-purple-900 animate-pulse"/>;  
               
               default:
                 break;
@@ -40,7 +40,7 @@ function Framework() {
               <p className="font-bold lg:px-4 text-nowrap px-2 mt-1 text-xs lg:text-lg uppercase">{item.name}</p>
               </div>
               <div className="flex items-end flex-col">
-                <span className="font-bold px-2">{item.level}</span>
+                {/* <span className="font-bold px-2">{item.level}</span> */}
                 <div className="w-full h-2 bg-transparent">
                   <div style={{"width":item.level}} className="bg-purple-900 h-full rounded-tr-full rounded-br-full"/>
                 </div>
