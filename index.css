@@ -7,6 +7,7 @@
 body {
   background-color: #000000;
   color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 header {
@@ -21,7 +22,7 @@ header {
   width: 90%;
   border: 1px solid gray;
   border-radius: 50px 50px;
-  background: #00000071;
+  background: #000000a8;
   z-index: 5;
 }
 nav > li {
@@ -38,8 +39,6 @@ nav > li {
 }
 
 section {
-  min-height: 100vh;
-  max-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,6 +47,8 @@ section {
 }
 
 .home {
+  min-height: 100vh;
+  max-height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -94,7 +95,8 @@ section {
 }
 
 .about {
-  /* border: 2px solid gray; */
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .about-details-container {
@@ -108,7 +110,7 @@ section {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  /* border: 1px solid black; */
+  /* border: 1px solid white; */
   padding: 30px;
   flex: 1;
   /* gap: 30px; */
@@ -124,6 +126,7 @@ a,
   font-size: 20px;
   color: gray;
   font-style: italic;
+  font-family: serif;
 }
 
 .icon-container {
@@ -144,7 +147,6 @@ a,
 }
 
 .about-details > p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   /* line-height: 110%; */
   font-size: 17px;
   display: flex;
@@ -169,6 +171,8 @@ a,
 
 .skill {
   /* border: 2px solid gray; */
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .skill-container {
@@ -200,22 +204,31 @@ a,
   padding: 50px 30px;
   /* border: 2px solid purple; */
 }
-.project div {
-  border: 1px solid black;
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  max-width: 80vw;
+  padding: 30px;
+  /* border: 1px solid white; */
 }
 
-.project > section {
-  /* border: 1px solid rgba(128, 128, 128, 0.624); */
-  flex: 1;
+.project-details-container {
   display: flex;
-  gap: 20px;
-  width: fit-content;
-  padding: 0px;
+  height: max-content;
+  width: 100%;
+  /* margin: 0 auto; */
+  /* border: 2px solid white; */
 }
 
 .contact {
   background-color: black;
   gap: 50px;
+
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .contact p {
@@ -224,12 +237,19 @@ a,
 }
 
 .service {
+  min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: row;
+  /* border: 1px solid white; */
 }
 .service > div {
   display: flex;
   height: 500px;
+  gap: 30px;
+}
+.project > div {
+  display: flex;
   gap: 30px;
 }
 .service-container {
@@ -239,6 +259,7 @@ a,
   flex: 1;
   max-width: 80vw;
   padding: 30px;
+  /* border: 1px solid white; */
 }
 .service-container > div {
   display: flex;
@@ -252,8 +273,15 @@ a,
   border: 1px solid gray;
   flex-direction: column;
   display: flex;
+  max-width: 320px;
   justify-content: space-between;
   padding: 20px;
+}
+
+.service p {
+  font-size: small;
+  color: gray;
+  margin-top: 10px;
 }
 
 footer {
@@ -266,6 +294,13 @@ footer {
   overflow: hidden;
 }
 
+footer h2 {
+  font-size: 18px;
+  font-style: italic;
+  color: rgb(170, 165, 165);
+  font-weight: 700;
+}
+
 .footer-left {
   display: flex;
   flex: 1;
@@ -273,7 +308,7 @@ footer {
   gap: 40px;
 }
 
-.footer-left > span {
+.footer-left > p {
   width: 300px;
 }
 
@@ -283,19 +318,36 @@ footer {
   max-width: 90vw;
   width: 100%;
   padding: 50px;
+  gap: 50px;
 }
 
 .footer-right {
   display: flex;
-  flex: 1;
+  flex: 2;
+  gap: 40px;
   justify-content: space-between;
+  /* border: 1px solid white; */
 }
 
 .footer-container p {
   color: gray;
+  font-style: italic;
+  font-weight: 400;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .footer-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.flex-column {
   display: flex;
   flex-direction: column;
 }
@@ -315,6 +367,7 @@ footer {
   color: rgba(245, 245, 245, 0);
   font-family: fantasy;
   font-style: italic;
+  font-weight: 400;
   text-wrap: nowrap;
   width: 100%;
   -webkit-text-stroke-width: 1px;
