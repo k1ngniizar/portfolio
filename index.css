@@ -21,6 +21,7 @@ header {
   translate: -50%;
   top: 5px;
   width: 90%;
+  /* padding: 20px; */
   border: 1px solid gray;
   border-radius: 50px 50px;
   background: #000000ec;
@@ -1152,7 +1153,7 @@ footer {
 
 @media screen and (max-width: 555px) {
   header {
-    padding: 5px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1262,7 +1263,7 @@ footer {
     flex-direction: row;
     align-items: start;
     gap: 40px;
-    padding: 50px 0px;
+    padding: 50px 10px;
     /* border: 2px solid white; */
   }
 
