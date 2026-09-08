@@ -8,6 +8,7 @@ body {
   background-color: #000000;
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -25,9 +26,377 @@ header {
   background: #000000a8;
   z-index: 5;
 }
+header > h1 {
+  font-size: 18px;
+}
 nav > li {
   display: flex;
   column-gap: 8px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  padding: 80px 8%;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+}
+
+/* =========================
+   EYEBROW
+========================= */
+
+.eyebrow {
+  margin: 0 0 25px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+
+  opacity: 0;
+
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.hero-title {
+  margin: 0;
+
+  font-size: clamp(4rem, 11vw, 10rem);
+  line-height: 0.82;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+}
+
+/*
+  Each line hides its content initially.
+*/
+
+.line {
+  display: block;
+  overflow: hidden;
+}
+
+.line span {
+  display: block;
+
+  opacity: 0;
+  transform: translateY(110%);
+
+  animation: revealLine 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Different entrance timing */
+
+.line-one span {
+  animation-delay: 0.35s;
+}
+
+.line-two span {
+  animation-delay: 0.5s;
+}
+
+.line-three span {
+  animation-delay: 0.65s;
+}
+
+/* =========================
+   MOVE
+========================= */
+
+.line-three span {
+  transform-origin: left center;
+}
+
+/*
+  After entering,
+  MOVE gets a subtle continuous motion.
+*/
+
+.line-three span {
+  animation:
+    revealLine 1s cubic-bezier(0.16, 1, 0.3, 1) 0.65s forwards,
+    moveWord 4s ease-in-out 1.8s infinite;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.hero-description {
+  max-width: 500px;
+
+  margin: 40px 0 0;
+
+  font-size: 1rem;
+  line-height: 1.7;
+
+  opacity: 0;
+  transform: translateY(20px);
+
+  animation: fadeUp 0.8s ease 1s forwards;
+}
+
+/* =========================
+   SCROLL LINK
+========================= */
+
+.scroll-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-top: 45px;
+
+  color: inherit;
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+
+  opacity: 0;
+
+  animation: fadeUp 0.8s ease 1.2s forwards;
+}
+
+.arrow {
+  display: inline-block;
+
+  font-size: 18px;
+
+  animation: arrowMove 1.5s ease-in-out infinite;
+}
+
+/* =========================
+   DECORATIVE SHAPES
+========================= */
+
+.floating-shape {
+  position: absolute;
+
+  border: 1px solid currentColor;
+
+  pointer-events: none;
+}
+
+/*
+  Large rotating square
+*/
+
+.shape-one {
+  width: 300px;
+  height: 300px;
+
+  right: 8%;
+  top: 15%;
+
+  opacity: 0.12;
+
+  transform: rotate(25deg);
+
+  animation:
+    rotateShape 18s linear infinite,
+    floatShape 5s ease-in-out infinite;
+}
+
+/*
+  Smaller circle
+*/
+
+.shape-two {
+  width: 120px;
+  height: 120px;
+
+  right: 25%;
+  bottom: 12%;
+
+  border-radius: 50%;
+
+  opacity: 0.15;
+
+  animation: floatShape 4s ease-in-out infinite reverse;
+}
+
+/*
+  Floating dots
+*/
+
+.floating-dot {
+  position: absolute;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: currentColor;
+
+  pointer-events: none;
+}
+
+.dot-one {
+  top: 25%;
+  left: 55%;
+
+  animation: floatDot 3s ease-in-out infinite;
+}
+
+.dot-two {
+  right: 12%;
+  bottom: 25%;
+
+  animation: floatDot 4s ease-in-out 1s infinite;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes revealLine {
+  from {
+    opacity: 0;
+    transform: translateY(110%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveWord {
+  0%,
+  100% {
+    transform: translateX(0) skewX(0deg);
+  }
+
+  50% {
+    transform: translateX(18px) skewX(-3deg);
+  }
+}
+
+@keyframes arrowMove {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes rotateShape {
+  from {
+    transform: rotate(25deg);
+  }
+
+  to {
+    transform: rotate(385deg);
+  }
+}
+
+@keyframes floatShape {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 -20px;
+  }
+}
+
+@keyframes floatDot {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(20px, -30px);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 60px 6%;
+  }
+
+  .hero-title {
+    font-size: clamp(3.5rem, 17vw, 6rem);
+  }
+
+  .hero-description {
+    max-width: 90%;
+  }
+
+  .shape-one {
+    width: 180px;
+    height: 180px;
+
+    right: -60px;
+    top: 12%;
+  }
+
+  .shape-two {
+    width: 80px;
+    height: 80px;
+
+    right: 10%;
+  }
+}
+
+/* =========================
+   ACCESSIBILITY
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 .whitesmoke {
@@ -35,7 +404,7 @@ nav > li {
 }
 
 .black {
-  background-color: #00000071;
+  background-color: #000000;
 }
 
 section {
@@ -54,19 +423,34 @@ section {
   align-items: center;
   justify-content: center;
   row-gap: 10px;
+  padding: 0px 30px;
+  /* border: 1px solid white; */
 }
 
-.home > h2 {
-  font-size: 70px;
-  text-align: center;
-  color: rgba(245, 245, 245, 0);
-  font-style: italic;
-  font-family: fantasy;
-  font-weight: 400;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: white;
+.home-container {
+  border-left: 5px solid gray;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+  padding: 10px;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.692);
 }
-.home > p,
+
+@media screen and (width >= 1000px) {
+  .home-container {
+    border-left: 5px solid gray;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 50%;
+    padding: 10px;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.692);
+  }
+}
+
 .contact p {
   font-size: 60px;
   text-align: center;
@@ -105,6 +489,7 @@ section {
   display: flex;
   width: 80%;
   height: 500px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -131,9 +516,23 @@ a,
   font-family: serif;
 }
 
+nav a {
+  text-decoration: none;
+  font-style: normal;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  transition: all;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
 .icon-container {
   display: flex;
-  column-gap: 5px;
+  column-gap: 10px;
 }
 
 .icon-link {
@@ -229,7 +628,7 @@ a,
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
-  max-width: 80vw;
+  max-width: 1500px;
   padding: 30px;
   gap: 100px;
   /* border: 1px solid white; */
@@ -373,6 +772,7 @@ footer h2 {
 
 .flex-column {
   display: flex;
+  gap: 5px;
   flex-direction: column;
 }
 
@@ -461,21 +861,18 @@ footer h2 {
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  nav > a {
+    font-size: 14px;
+  }
+
   .home {
     row-gap: 5px;
   }
 
-  .home > h2 {
-    font-size: 70px;
-    text-align: center;
-    color: rgba(245, 245, 245, 0);
-    font-style: italic;
-    font-family: fantasy;
-    font-weight: 400;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
-  }
-  .home > p,
   .contact p {
     font-size: 60px;
     text-align: center;
@@ -529,7 +926,7 @@ footer h2 {
 
   .icon-container {
     display: flex;
-    column-gap: 5px;
+    column-gap: 10px;
   }
 
   .icon-link {
@@ -671,7 +1068,7 @@ footer h2 {
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    background-color: black;
+    /* background-color: black; */
   }
 
   footer h2 {
@@ -706,7 +1103,7 @@ footer h2 {
     width: 100%;
     padding: 50px 20px;
     gap: 50px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
 
   .footer-right {
@@ -744,23 +1141,27 @@ footer h2 {
 }
 
 @media screen and (max-width: 425px) {
+  header {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 70%; */
+  }
+
+  header > h1 {
+    display: none;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
   .home {
     row-gap: 5px;
   }
 
-  .home > h2 {
-    font-size: 50px;
-    text-align: center;
-    color: rgba(245, 245, 245, 0);
-    font-style: italic;
-    font-family: fantasy;
-    font-weight: 400;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-  }
-  .home > p,
   .contact p {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     color: rgba(245, 245, 245, 0);
     font-family: fantasy;
@@ -782,7 +1183,7 @@ footer h2 {
     flex-direction: column;
     width: 100%;
     height: fit-content;
-    border: 1px solid wheat;
+    /* border: 1px solid wheat; */
     margin: 0 auto;
   }
 
@@ -812,7 +1213,7 @@ footer h2 {
 
   .icon-container {
     display: flex;
-    column-gap: 5px;
+    column-gap: 10px;
   }
 
   .icon-link {
@@ -857,19 +1258,32 @@ footer h2 {
     flex-direction: row;
     align-items: start;
     gap: 40px;
-    padding: 50px 10px;
+    padding: 50px 0px;
     /* border: 2px solid white; */
+  }
+
+  .project > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 30px;
+    width: 100%;
+    padding: 10px;
+    /* border: 1px solid white; */
   }
 
   .project-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    flex: 1;
-    /* max-width: 80vw; */
-    padding: 10px;
+    /* flex: 1; */
+    max-width: 100%;
+    padding: 0px;
     gap: 30px;
     /* border: 1px solid white; */
+    width: 100%;
   }
 
   .project-details-container {
@@ -882,24 +1296,19 @@ footer h2 {
     border: 1px solid rgba(128, 128, 128, 0.442);
   }
 
-  .project > div {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    /* border: 1px solid white; */
-  }
-
   .service {
     position: relative;
     min-height: 100vh;
     max-height: fit-content;
     display: flex;
     flex-direction: row;
-    padding: 50px;
+    padding: 50px 10px;
     /* border: 1px solid white; */
   }
+
   .service > div {
     display: flex;
+    flex-direction: column;
     height: fit-content;
     gap: 30px;
     /* border: 1px solid white; */
@@ -911,26 +1320,26 @@ footer h2 {
     justify-content: space-between;
     /* flex: 1; */
     max-width: 100vw;
-    /* padding: 30px; */
+    padding: 5px;
     /* border: 1px solid white; */
     height: fit-content;
     gap: 30px;
   }
   .service-container > div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     height: fit-content;
     /* border: 1px solid white; */
     gap: 20px;
   }
   .service-container > h2 {
-    width: 300px;
+    width: 100%;
   }
   .service article {
     border: 1px solid gray;
     flex-direction: column;
     display: flex;
-    max-width: 320px;
+    max-width: 100%;
     min-height: 250px;
     justify-content: space-between;
     /* padding: 20px; */
@@ -951,7 +1360,7 @@ footer h2 {
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    background-color: black;
+    /* background-color: black; */
   }
 
   footer h2 {
@@ -985,7 +1394,7 @@ footer h2 {
     width: 100%;
     padding: 50px 20px;
     gap: 50px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
 
   .footer-right {
