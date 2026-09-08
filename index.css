@@ -23,7 +23,7 @@ header {
   width: 90%;
   border: 1px solid gray;
   border-radius: 50px 50px;
-  background: #000000a8;
+  background: #000000ec;
   z-index: 5;
 }
 header > h1 {
@@ -63,7 +63,8 @@ nav > li {
    EYEBROW
 ========================= */
 
-.eyebrow {
+.eyebrow,
+h2 {
   margin: 0 0 25px;
 
   font-size: 12px;
@@ -75,7 +76,18 @@ nav > li {
   animation: fadeUp 0.8s ease forwards;
   animation-delay: 0.2s;
 }
+.big-eyebrow {
+  margin: 0 0 0px;
 
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+
+  opacity: 0;
+
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
 /* =========================
    TITLE
 ========================= */
@@ -473,7 +485,7 @@ section {
 
 .dim {
   background-color: #000000;
-  opacity: 0.7;
+  opacity: 0.8;
   position: absolute;
   inset: 0;
   z-index: -5;
@@ -483,6 +495,7 @@ section {
   background-color: black;
   min-height: 100vh;
   max-height: 100vh;
+  padding: 50px 0px;
 }
 
 .about-details-container {
@@ -503,13 +516,7 @@ section {
   /* gap: 30px; */
 }
 
-.about-details > h2,
-.about-details h3,
-.skill > h2,
-.project h2,
-a,
-.service > div > h2,
-.contact > h2 {
+a {
   font-size: 20px;
   color: gray;
   font-style: italic;
@@ -568,7 +575,7 @@ nav a:hover {
 
 .about-abbreviation {
   flex: 1;
-  border: 1px solid gray;
+  border: 1px solid rgba(128, 128, 128, 0.626);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -638,7 +645,9 @@ nav a:hover {
   display: flex;
   min-height: 400px;
   height: max-content;
+  max-width: 100%;
   width: 100%;
+  max-width: 70vw;
   /* margin: 0 auto; */
   border: 1px solid rgba(128, 128, 128, 0.585);
 }
@@ -717,12 +726,12 @@ footer {
   overflow: hidden;
 }
 
-footer h2 {
+/* footer h2 {
   font-size: 18px;
   font-style: italic;
   color: rgb(170, 165, 165);
   font-weight: 700;
-}
+} */
 
 .footer-left {
   display: flex;
@@ -888,7 +897,7 @@ footer h2 {
     background-color: black;
     min-height: 100vh;
     max-height: fit-content;
-    padding: 20px;
+    padding: 50px 20px;
   }
 
   .about-details-container {
@@ -911,13 +920,7 @@ footer h2 {
     /* gap: 30px; */
   }
 
-  .about-details > h2,
-  .about-details h3,
-  .skill > h2,
-  .project h2,
-  a,
-  .service > div > h2,
-  .contact > h2 {
+  a {
     font-size: 16px;
     color: gray;
     font-style: italic;
@@ -975,7 +978,7 @@ footer h2 {
     flex-direction: row;
     align-items: start;
     gap: 40px;
-    padding: 50px 10px;
+    padding: 100px 10px;
     /* border: 2px solid white; */
   }
 
@@ -984,7 +987,7 @@ footer h2 {
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    /* max-width: 80vw; */
+    max-width: 100%;
     padding: 10px;
     gap: 100px;
     /* border: 1px solid white; */
@@ -1071,13 +1074,13 @@ footer h2 {
     /* background-color: black; */
   }
 
-  footer h2 {
+  /* footer h2 {
     font-size: 18px;
     font-style: italic;
     color: rgb(170, 165, 165);
     font-weight: 700;
     margin-bottom: 5px;
-  }
+  } */
 
   .footer-left {
     display: flex;
@@ -1175,7 +1178,7 @@ footer h2 {
     background-color: black;
     min-height: 100vh;
     max-height: fit-content;
-    padding: 10px;
+    padding: 50px 10px;
   }
 
   .about-details-container {
@@ -1198,13 +1201,7 @@ footer h2 {
     /* gap: 30px; */
   }
 
-  .about-details > h2,
-  .about-details h3,
-  .skill > h2,
-  .project h2,
-  a,
-  .service > div > h2,
-  .contact > h2 {
+  a {
     font-size: 16px;
     color: gray;
     font-style: italic;
@@ -1279,7 +1276,7 @@ footer h2 {
     align-items: center;
     justify-content: space-between;
     /* flex: 1; */
-    max-width: 100%;
+    max-width: 100vw;
     padding: 0px;
     gap: 30px;
     /* border: 1px solid white; */
@@ -1291,6 +1288,7 @@ footer h2 {
     flex-direction: column-reverse;
     min-height: 400px;
     height: max-content;
+    max-width: 100%;
     width: 100%;
     /* margin: 0 auto; */
     border: 1px solid rgba(128, 128, 128, 0.442);
@@ -1363,12 +1361,12 @@ footer h2 {
     /* background-color: black; */
   }
 
-  footer h2 {
+  /* footer h2 {
     font-size: 18px;
     font-style: italic;
     color: rgb(170, 165, 165);
     font-weight: 700;
-  }
+  } */
 
   .footer-left {
     display: flex;
