@@ -1,0 +1,298 @@
+/* =========================================
+   FIXED SCREEN PARTICLES
+   ========================================= */
+
+.screen-particles {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+
+  overflow: hidden;
+  pointer-events: none;
+
+  /* Keep this behind your actual UI */
+  z-index: 20;
+}
+
+/* Make sure your actual website sits above it */
+
+/* main,
+header,
+nav,
+footer {
+  position: relative;
+  z-index: 1;
+} */
+
+/* =========================================
+   COMMON PARTICLE
+   ========================================= */
+
+.particle {
+  position: absolute;
+  display: block;
+
+  opacity: 0;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* =========================================
+   DOTS
+   ========================================= */
+
+.dot-random {
+  width: 3px;
+  height: 3px;
+
+  border-radius: 50%;
+  background: currentColor;
+
+  animation-name: moveDot;
+}
+
+/* Different positions */
+
+.p1 {
+  left: 5%;
+  top: 80%;
+  color: rgba(255, 255, 255, 0.5);
+  animation-duration: 7s;
+  animation-delay: -2s;
+}
+
+.p2 {
+  left: 17%;
+  top: 30%;
+  color: rgba(255, 255, 255, 0.35);
+  animation-duration: 11s;
+  animation-delay: -7s;
+}
+
+.p3 {
+  left: 29%;
+  top: 65%;
+  color: rgba(255, 255, 255, 0.45);
+  animation-duration: 9s;
+  animation-delay: -4s;
+}
+
+.p4 {
+  left: 42%;
+  top: 15%;
+  color: rgba(255, 255, 255, 0.4);
+  animation-duration: 13s;
+  animation-delay: -9s;
+}
+
+.p5 {
+  left: 55%;
+  top: 85%;
+  color: rgba(255, 255, 255, 0.3);
+  animation-duration: 8s;
+  animation-delay: -3s;
+}
+
+.p6 {
+  left: 68%;
+  top: 40%;
+  color: rgba(255, 255, 255, 0.5);
+  animation-duration: 10s;
+  animation-delay: -6s;
+}
+
+.p7 {
+  left: 79%;
+  top: 72%;
+  color: rgba(255, 255, 255, 0.35);
+  animation-duration: 14s;
+  animation-delay: -11s;
+}
+
+.p8 {
+  left: 91%;
+  top: 20%;
+  color: rgba(255, 255, 255, 0.45);
+  animation-duration: 9s;
+  animation-delay: -5s;
+}
+
+.p9 {
+  left: 12%;
+  top: 55%;
+  color: rgba(255, 255, 255, 0.25);
+  animation-duration: 15s;
+  animation-delay: -12s;
+}
+
+.p10 {
+  left: 36%;
+  top: 90%;
+  color: rgba(255, 255, 255, 0.4);
+  animation-duration: 12s;
+  animation-delay: -8s;
+}
+
+.p11 {
+  left: 73%;
+  top: 10%;
+  color: rgba(255, 255, 255, 0.3);
+  animation-duration: 16s;
+  animation-delay: -14s;
+}
+
+.p12 {
+  left: 84%;
+  top: 58%;
+  color: rgba(255, 255, 255, 0.45);
+  animation-duration: 7s;
+  animation-delay: -1s;
+}
+
+/* =========================================
+   DOT MOVEMENT
+   ========================================= */
+
+@keyframes moveDot {
+  0% {
+    transform: translate(-20vw, 20vh) scale(0);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(30vw, -30vh) scale(1);
+    opacity: 0;
+  }
+}
+
+/* =========================================
+   LINES
+   ========================================= */
+
+.line-random {
+  width: 100px;
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  animation-name: flyLine;
+}
+
+/* Individual lines */
+
+.l1 {
+  left: -120px;
+  top: 15%;
+  transform: rotate(20deg);
+  animation-duration: 7s;
+  animation-delay: -3s;
+}
+
+.l2 {
+  left: -120px;
+  top: 37%;
+  transform: rotate(-15deg);
+  animation-duration: 10s;
+  animation-delay: -7s;
+}
+
+.l3 {
+  left: -120px;
+  top: 62%;
+  transform: rotate(12deg);
+  animation-duration: 8s;
+  animation-delay: -1s;
+}
+
+.l4 {
+  left: -120px;
+  top: 82%;
+  transform: rotate(-25deg);
+  animation-duration: 13s;
+  animation-delay: -9s;
+}
+
+.l5 {
+  left: 25%;
+  top: -100px;
+  transform: rotate(70deg);
+  animation-duration: 11s;
+  animation-delay: -5s;
+}
+
+.l6 {
+  left: 55%;
+  top: -100px;
+  transform: rotate(110deg);
+  animation-duration: 9s;
+  animation-delay: -4s;
+}
+
+.l7 {
+  left: 80%;
+  top: -100px;
+  transform: rotate(75deg);
+  animation-duration: 14s;
+  animation-delay: -10s;
+}
+
+.l8 {
+  left: 100%;
+  top: 45%;
+  transform: rotate(160deg);
+  animation-duration: 12s;
+  animation-delay: -6s;
+}
+
+/* =========================================
+   LINE MOVEMENT
+   ========================================= */
+
+@keyframes flyLine {
+  0% {
+    translate: -20vw 20vh;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.8;
+  }
+
+  70% {
+    opacity: 0.5;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    translate: 120vw -20vh;
+    opacity: 0;
+  }
+}
+
+/* =========================================
+   REDUCE MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .particle {
+    animation: none;
+    opacity: 0.2;
+  }
+}
