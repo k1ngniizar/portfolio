@@ -362,13 +362,15 @@ footer {
 .footer-left {
   display: flex;
   flex: 1;
+  /* max-width: 200px; */
   flex-direction: column;
   gap: 20px;
+  /* border: 1px solid white; */
 }
 
-.footer-left > p {
-  width: 300px;
-}
+/* .footer-left > p {
+  width: px;
+} */
 
 .footer-container {
   border: 1px solid rgba(128, 128, 128, 0.526);
