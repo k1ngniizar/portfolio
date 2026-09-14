@@ -378,13 +378,13 @@ footer {
   max-width: 90vw;
   width: 100%;
   padding: 50px;
-  gap: 50px;
+  gap: 60px;
 }
 
 .footer-right {
   display: flex;
   flex: 3;
-  gap: 40px;
+  /* gap: 40px; */
   justify-content: space-between;
   /* border: 1px solid white; */
 }
