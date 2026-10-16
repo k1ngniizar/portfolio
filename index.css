@@ -183,10 +183,11 @@ nav a:hover {
 
 .about-details > p {
   /* line-height: 110%; */
-  font-size: 17px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  color: honeydew;
 }
 
 .about-image {
@@ -206,7 +207,7 @@ nav a:hover {
   overflow: hidden;
   background-color: #000000;
   border-radius: 50%;
-  box-shadow: 0 0px 10px #c4a489;
+  box-shadow: 0 0px 5px #c4a489;
 }
 
 .about-image-avatar > img {
@@ -296,6 +297,19 @@ nav a:hover {
   /* border: 1px solid white; */
 }
 
+.project-container span {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 2px 5px;
+  color: dimgray;
+}
+.project-container a {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 2px 5px;
+  color: dimgray;
+}
+
 .project-details-container {
   display: flex;
   min-height: 400px;
@@ -305,6 +319,10 @@ nav a:hover {
   max-width: 70vw;
   /* margin: 0 auto; */
   border: 1px solid rgba(128, 128, 128, 0.585);
+}
+
+.project-details-container-reverse {
+  flex-direction: row-reverse;
 }
 .project > div {
   display: flex;
@@ -498,7 +516,7 @@ footer {
     overflow: hidden;
     background-color: #000000;
     border-radius: 50%;
-    box-shadow: 0 0px 10px #c4a489;
+    box-shadow: 0 0px 5px #c4a489;
   }
 
   .about-image-avatar > img {
@@ -553,11 +571,13 @@ footer {
 
   .about-details > p {
     /* line-height: 110%; */
-    font-size: 18px;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0.05rem;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    color: whitesmoke;
+    color: honeydew;
   }
 
   .about-image {
@@ -602,12 +622,16 @@ footer {
 
   .project-details-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     min-height: 400px;
     height: max-content;
     width: 100%;
     /* margin: 0 auto; */
     border: 1px solid rgba(128, 128, 128, 0.442);
+  }
+
+  .project-details-container-reverse {
+    flex-direction: column-reverse;
   }
 
   .project > div {
@@ -820,8 +844,8 @@ footer {
     height: 250px;
     overflow: hidden;
     background-color: #000000;
-    border-radius: 50%;
-    box-shadow: 0 0px 10px #c4a489;
+    border-radius: 20px;
+    box-shadow: 0 0px 5px #c4a489;
   }
 
   .about-image-avatar > img {
@@ -934,13 +958,17 @@ footer {
 
   .project-details-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     min-height: 400px;
     height: max-content;
     max-width: 100%;
     width: 100%;
     /* margin: 0 auto; */
     border: 1px solid rgba(128, 128, 128, 0.442);
+  }
+
+  .project-details-container-reverse {
+    flex-direction: column-reverse;
   }
 
   .project a {
