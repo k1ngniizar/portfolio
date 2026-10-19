@@ -66,7 +66,7 @@ const projects = [
     alt: "Image of genfolio hero section.",
     title: "GENFOLIO",
     desc: "GenFolio is a browser-based portfolio studio for creating and exporting a personal portfolio.",
-    link: "https://k1ngniizar.github.io/genfolio/",
+    link: "https://k1ngniizar.github.io/GenFolio/",
     stack: ["HTML", "TypeScript", "Tailwind CSS"],
   },
   {
