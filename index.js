@@ -39,7 +39,7 @@ const projects = [
     alt: "Hero section image of Create Group website.",
     title: "Create Groups",
     desc: "Create groups let's you group people randomly whether it's just for a fun game, to share responsibilities, class grouping, debate teams, etc.",
-    link: "https://caphub-seven.vercel.app/",
+    link: "https://k1ngniizar.github.io/match/",
     stack: ["HTML", "CSS", "JavaScript"],
   },
   {
@@ -59,6 +59,15 @@ const projects = [
     desc: "Contributed to the design and development of a responsive landing page and sub-pages for a Bromuno, focusing on translating the design into a clean, functional, and user-friendly web experience.",
     link: "https://works.bromuno.com/",
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    color: "#ff5c35",
+    img: "https://res.cloudinary.com/dh4kjwb0h/image/upload/v1792431066/Screenshot_2026-10-19_181812_o3blb9.png",
+    alt: "Image of genfolio hero section.",
+    title: "GENFOLIO",
+    desc: "GenFolio is a browser-based portfolio studio for creating and exporting a personal portfolio.",
+    link: "https://k1ngniizar.github.io/genfolio/",
+    stack: ["HTML", "TypeScript", "Tailwind CSS"],
   },
   {
     color: "#eab24a",
