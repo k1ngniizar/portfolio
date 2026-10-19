@@ -62,7 +62,7 @@ const projects = [
   },
   {
     color: "#ff5c35",
-    img: "https://res.cloudinary.com/dh4kjwb0h/image/upload/v1792431066/Screenshot_2026-10-19_181812_o3blb9.png",
+    img: "https://res.cloudinary.com/dh4kjwb0h/image/upload/v1792435127/genfolio-overview_pdif8y.png",
     alt: "Image of genfolio hero section.",
     title: "GENFOLIO",
     desc: "GenFolio is a browser-based portfolio studio for creating and exporting a personal portfolio.",
