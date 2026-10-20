@@ -119,7 +119,7 @@ ${projects
                 <p>
                   ${project.desc}
                 </p>
-                <a target="_blank" href=${project.link}
+                <a style="color: ${project.color}" target="_blank" href=${project.link}
                   >View project here...</a
                 >
               </article>
